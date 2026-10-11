@@ -1,0 +1,451 @@
+{
+  "format": 1,
+  "project": "atlas-agent-runtime",
+  "version": "1.0.0",
+  "files": {
+    ".dockerignore": {
+      "sha256": "f8920762b056b9975c5b22696a5abe8d598be4c6442eb4684361457db60164ed",
+      "bytes": 207
+    },
+    ".env.example": {
+      "sha256": "c3390c0e5431d5a6ad8a079b4d4a8dda1bcf9e4c4539887682c1b97d00661cce",
+      "bytes": 721
+    },
+    ".github/workflows/ci.yaml": {
+      "sha256": "63154f27cc6e7c9c52213ac8b3ba5aaa14706d74e77226d5a42a6eabd50ea6dd",
+      "bytes": 2210
+    },
+    ".gitignore": {
+      "sha256": "d3ff3c9caae34bd08d176f78f5afee4f9514b1ce238a9ec42c05f7bad0439c9e",
+      "bytes": 255
+    },
+    "Dockerfile": {
+      "sha256": "3fb21bc7228111c1896d86a22ada5ba8264cc6c63329a8635986e381983d45da",
+      "bytes": 900
+    },
+    "MANIFEST.in": {
+      "sha256": "d3be3f2b103378377fbe3d3469437cc55e983fe12cd9568e6c31d3a4fd49f2bf",
+      "bytes": 641
+    },
+    "Makefile": {
+      "sha256": "1b38b4ba343638539e0f995e48fdd347876f71226ca4afcc2cfa3a3200f7ca77",
+      "bytes": 572
+    },
+    "README.md": {
+      "sha256": "c7d19b4f71c310a8b73b756a6702aef242a6ed4bda96713d5f62a45ef57d014d",
+      "bytes": 10627
+    },
+    "SECURITY.md": {
+      "sha256": "75d4fc3408e0f477760b42d80faff5e409dfa82ac89a65dcbdc5feeda6b438f8",
+      "bytes": 4134
+    },
+    "START_HERE.md": {
+      "sha256": "efa6d165dbe0a0eef8d943c2e5b2d7ca651e7cf0009e5178d74375c838b8fbe8",
+      "bytes": 3044
+    },
+    "TEST_REPORT.md": {
+      "sha256": "e8069f5681ce59f745d5605a4324e74dda9ae8687b6e967eb5fd7e593f13e8e4",
+      "bytes": 5466
+    },
+    "apps/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "apps/api/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "apps/api/main.py": {
+      "sha256": "2b0038cc4bdbe84708a9649dc034c16ac8ee3f8694e78280bb00323480f870bb",
+      "bytes": 14485
+    },
+    "apps/worker/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "apps/worker/main.py": {
+      "sha256": "98a90e9e61dbfdf885a5bb753f4ce738e8ce1ee49c09f681ffd6c3bb0511a6e7",
+      "bytes": 1717
+    },
+    "atlas/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "atlas/cli.py": {
+      "sha256": "58f735ba5968db7f3d362613149424893d6a9ec55a58f7a3c25f199efaebf30d",
+      "bytes": 4530
+    },
+    "atlas/config.py": {
+      "sha256": "5499ce34c3334f4300dfd09e3207a6f9004fcce7feb755ac1040db3ae7b57d2f",
+      "bytes": 2550
+    },
+    "atlas/context/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "atlas/context/compiler.py": {
+      "sha256": "b87d3a1b8ff73d55b98f9a53492e65d025151f0bd17521538dbabcea6f8864c2",
+      "bytes": 5998
+    },
+    "atlas/demo.py": {
+      "sha256": "6b5c988827d861cfefab155c15fc6f5ff95821b87489687709f61af337ae1596",
+      "bytes": 7407
+    },
+    "atlas/domain/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "atlas/domain/models.py": {
+      "sha256": "8e8528975bc5632878e01d698e0b6a0dc1ab9365984f8ecd19b38bcbedb81b55",
+      "bytes": 4115
+    },
+    "atlas/memory/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "atlas/memory/manager.py": {
+      "sha256": "52771e2b14267331a8f5dd6a3ed235cdde942d2d653135c4a085fa5e49478afe",
+      "bytes": 1744
+    },
+    "atlas/models/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "atlas/models/backends.py": {
+      "sha256": "ad451122f1899053eaa37d2dd68773e7886277d9fc9108ded51cae78d32cf511",
+      "bytes": 7660
+    },
+    "atlas/models/types.py": {
+      "sha256": "268dc5fd1290b00b7a8b41db97b2920a45900e434f0d434580d00961bf4435db",
+      "bytes": 566
+    },
+    "atlas/reference/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "atlas/reference/pages.py": {
+      "sha256": "ffd2a609daefac0d5e3321d8512cd2936ca73744a8d99f40c05e3a4f8f204eb6",
+      "bytes": 4805
+    },
+    "atlas/reference/tokenizer.py": {
+      "sha256": "0fe1bf4eeeb13fcde459a865698f1883d860bd7c2ed721db275a157b3792d6f0",
+      "bytes": 1658
+    },
+    "atlas/reference/torch_model.py": {
+      "sha256": "5e61f03d8e01ab4302e65bd1763c6e49d207e2d70d1153659bf17dacc51f4f84",
+      "bytes": 5060
+    },
+    "atlas/reference/transformer.py": {
+      "sha256": "d2d32d67fe4606481b897ae618afe0ba838f44dc404cebd7c43c6f4edb014873",
+      "bytes": 7863
+    },
+    "atlas/runtime/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "atlas/runtime/engine.py": {
+      "sha256": "d9516b1c65984d387a73bedde4f711e14ba455dcfb38255c6fa0d923b3d91481",
+      "bytes": 16857
+    },
+    "atlas/runtime/graph.py": {
+      "sha256": "71a155b514919e6f46510192d2651ea3edbdd3a44ec35efeadb185bdee3751b4",
+      "bytes": 1005
+    },
+    "atlas/runtime/inference.py": {
+      "sha256": "091d3ee96b054dca80b6c0e837f16d3427fb6919efa7419a7de37580887e6bec",
+      "bytes": 7285
+    },
+    "atlas/runtime/reducer.py": {
+      "sha256": "6e6540620a15f9d60fdd2624f1d21e708355fb8eed28b4880551b4917f6c3e12",
+      "bytes": 2647
+    },
+    "atlas/runtime/worker.py": {
+      "sha256": "f20cae3749fcfa1ff48b66d4bd17f2d11634361b45e9a2bd2f61691896ab5cff",
+      "bytes": 3770
+    },
+    "atlas/security/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "atlas/security/paths.py": {
+      "sha256": "4b7c2cae3ba31d4fdd8c2b7dc202a5cb80782f225af969912a4bb36fb595b9ac",
+      "bytes": 2459
+    },
+    "atlas/security/uploads.py": {
+      "sha256": "e35ab219d872d5720c01615980b5b1d35b56af3dff634fb86ebb0dabfb01a7fc",
+      "bytes": 2571
+    },
+    "atlas/storage/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "atlas/storage/locks.py": {
+      "sha256": "569b9c1296699eee87856737181b359720c63d4890f5bfac892cb223ba4a7aa0",
+      "bytes": 1371
+    },
+    "atlas/storage/store.py": {
+      "sha256": "fe22cfd411a8fdea780eff412c3e83c25dd114709e76b1247f7c60c45dfb3d9e",
+      "bytes": 19234
+    },
+    "atlas/telemetry/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "atlas/telemetry/metrics.py": {
+      "sha256": "e968c96712a593c2cfe12f2ced529e465cd99fcff07093f1c0838f2b654ad66b",
+      "bytes": 3233
+    },
+    "atlas/telemetry/tracing.py": {
+      "sha256": "d522dd72e99519ef9d10acd62c9f632a6bb83e288c9df41fc1b102c58ea30b7d",
+      "bytes": 651
+    },
+    "atlas/tools/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "atlas/tools/patch.py": {
+      "sha256": "1f12938ff1618d713a6e45b540a4f6174d1c786a637ced7e180fa27b0589fe46",
+      "bytes": 6252
+    },
+    "atlas/tools/process.py": {
+      "sha256": "e790e06f50146aac1f75a002af282e9d5c18f5ada06982ca23a126a294f9f061",
+      "bytes": 2386
+    },
+    "atlas/tools/registry.py": {
+      "sha256": "00828e2463268fbba2a0e660c824d3e0a4cae21a36619c33b55f41505e5931f2",
+      "bytes": 15410
+    },
+    "atlas/tools/workspace.py": {
+      "sha256": "1f33a42736debab71c9528dddd0c4ce98cbea15ac35d57befc5c7badba68dab5",
+      "bytes": 2271
+    },
+    "benchmarks/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "benchmarks/results/reference-training.json": {
+      "sha256": "765e0a42144ae14bd97722205676e18c4ddb6a845e3488f21dbf8dfce58ffe39",
+      "bytes": 2046
+    },
+    "benchmarks/results/results.jsonl": {
+      "sha256": "57c947472b635f143ff4d104cbc2873adc30703a5f7a65e081175eb03a8186a5",
+      "bytes": 59459
+    },
+    "benchmarks/results/summary.csv": {
+      "sha256": "ce1187dc78c1cf3fe7f67e69b1972025e9f989b9db5847b202e2fee94d63b810",
+      "bytes": 764
+    },
+    "benchmarks/run_all.py": {
+      "sha256": "1ff2522a9c4d5adc6993ded08c12ea113c71cc333ad40e25f3b747fcfe2c5f92",
+      "bytes": 8299
+    },
+    "compose.yaml": {
+      "sha256": "dfe7c44981aa694c52ef2c270a9b79e4397d7e80c02cce12d754765880da5e0f",
+      "bytes": 1201
+    },
+    "deploy/Caddyfile": {
+      "sha256": "9d2505164e21324297f20b0aa149fff6cc885239e5b7904c027d049092008a75",
+      "bytes": 74
+    },
+    "deploy/atlas-api.service": {
+      "sha256": "614ddefc765418baf5ac4ee2f5f89d1a71d5d13fa14fc8241301f638e1e5157f",
+      "bytes": 514
+    },
+    "deploy/atlas-worker.service": {
+      "sha256": "fdc254546bdd9954e70daeec92a9947440c993c626f23a1586ea7de38f8de08d",
+      "bytes": 514
+    },
+    "deploy/model.compose.yaml": {
+      "sha256": "0dcf4b9d2dad7f9555dee14d3193d7bc80d889679c876492ce0978ff05759876",
+      "bytes": 405
+    },
+    "deploy/sandbox.Dockerfile": {
+      "sha256": "c160f5f8a4f0fe5336c98b01ba9b66020dfc8c90102397593a44221cd0ee7c5e",
+      "bytes": 203
+    },
+    "docs/API.md": {
+      "sha256": "1f4d1467f850f917c4b9e1958e9c9815ef2733cf8e5179533af899d31ad96886",
+      "bytes": 3116
+    },
+    "docs/ARCHITECTURE.md": {
+      "sha256": "5b140ff2b67098a716a14ae0296b9e008ea22cb9a8b0d679b24ab247da459891",
+      "bytes": 5923
+    },
+    "docs/BENCHMARKS.md": {
+      "sha256": "959770727cc9d21f33f78182162709c1d1033032eebedb81a6835a1a57dbd983",
+      "bytes": 4178
+    },
+    "docs/BENCHMARK_RESULTS.md": {
+      "sha256": "753e0e39277459843f8f8d545a5e51f17e8839e99c25644e1cffffda61526e82",
+      "bytes": 943
+    },
+    "docs/DEPLOYMENT.md": {
+      "sha256": "e5c1990050568126622a27699ff1239d17b5609a09e57da40ba83711f65894ea",
+      "bytes": 11467
+    },
+    "docs/SCREENSHOTS.md": {
+      "sha256": "f607f4436045e13793347c4182dfb8d4ed06c85fbc5fb05a23d9781f6ac441d8",
+      "bytes": 389
+    },
+    "docs/SPECIFICATION.md": {
+      "sha256": "1cf07c62e06bc8e9120ad048c86d4fac90d4ba4450aac87354a89a30cf887cea",
+      "bytes": 4247
+    },
+    "docs/screenshots/overview-desktop.png": {
+      "sha256": "360aabd16871e29dc5b49f1623a36360f7f9aaac7fe3ff1079ad114cc28fae3a",
+      "bytes": 102573
+    },
+    "docs/screenshots/overview-mobile.png": {
+      "sha256": "82af24cc2417cb6cf88bad50ce6f80431418cfadb40e6206c977e7060e5a03ad",
+      "bytes": 88663
+    },
+    "docs/screenshots/verified-run.png": {
+      "sha256": "6bd55321a1f86dc7c11a86ec2ab1d3de8892799e0ac154f5dfda8e358329227c",
+      "bytes": 82954
+    },
+    "frontend/.prettierrc.json": {
+      "sha256": "85378d4d734cb7d35641c44ffdf322fe0bc76a3b12841927f20aa5f0eba12695",
+      "bytes": 73
+    },
+    "frontend/dist/assets/index-DDFA5yA6.css": {
+      "sha256": "b3a55081344e6074ce2bb5ff4648259cc9fbe2b3e6999a114bc6d46190cd40bd",
+      "bytes": 14926
+    },
+    "frontend/dist/assets/index-D_GKN5hP.js": {
+      "sha256": "3a01d3832bd67a89e804f5bc59c23c90ffd8dff7f522fae6cbd66033d90d2da3",
+      "bytes": 239009
+    },
+    "frontend/dist/index.html": {
+      "sha256": "1a791f38bac0bd37228d3718b76ad97d98a833ad2d79b9b77d47be3e805a15cd",
+      "bytes": 458
+    },
+    "frontend/index.html": {
+      "sha256": "e14cc97cf0f81d2587433dfc10cfbd686a38982daea5aa2085cf3a5f29ff5cce",
+      "bytes": 360
+    },
+    "frontend/package-lock.json": {
+      "sha256": "ce5800d5976c97054dcb6059baec0cffbb50a7b6cc3189462b17443e0baf44ae",
+      "bytes": 39533
+    },
+    "frontend/package.json": {
+      "sha256": "a41dea2584ad68c4fec501d6c9ecaec2933d931579b7f0681144ab59a63fb94e",
+      "bytes": 767
+    },
+    "frontend/playwright.config.ts": {
+      "sha256": "879e90dadaab1536f516cc30dc819ce402e0de18c4dc811f298cdf7d79edc38a",
+      "bytes": 1662
+    },
+    "frontend/src/api.ts": {
+      "sha256": "dd8e3aa2e256433da5df9e5cafde699aaa485e252a4e175c402f0a2c7746c714",
+      "bytes": 2568
+    },
+    "frontend/src/main.tsx": {
+      "sha256": "ec21c5a8a6370fc92326e596e099b7eed0d3d3fbae83366e69248718ce68d5f5",
+      "bytes": 28036
+    },
+    "frontend/src/style.css": {
+      "sha256": "7c807c39a839eba0502f70d8cee50e49fc5eb8c0c3982c2c994bcff8cee3b8af",
+      "bytes": 19124
+    },
+    "frontend/tests/runtime.spec.ts": {
+      "sha256": "3d0cc930677709c3970578c844184642c8ed5946a38fa887ddcdc35099856f4e",
+      "bytes": 1442
+    },
+    "frontend/tsconfig.json": {
+      "sha256": "1714b4515bbaca39797a654211996f348b6dfa33ea97f74d9551e64ea7f14f8e",
+      "bytes": 359
+    },
+    "frontend/vite.config.ts": {
+      "sha256": "409628223ecfee0cc54abbad41c7869598366339c1b3c4d80cd25f5b34ff8b05",
+      "bytes": 233
+    },
+    "pyproject.toml": {
+      "sha256": "8fee156b5f53b4f8d197c309956a108874d00de0513b4196871727fd7ea43db6",
+      "bytes": 1187
+    },
+    "render.yaml": {
+      "sha256": "74e7034db7cdd4e370057004ecd82c96f50c14d66a66e583b2ad57646be1109e",
+      "bytes": 656
+    },
+    "requirements-dev.lock": {
+      "sha256": "dfb78965cacdf5907b5666e03694491e5d7f4755ff878dad498d6a128cda49cc",
+      "bytes": 92
+    },
+    "requirements.lock": {
+      "sha256": "6a8196d697c92474bf0059f14d5f82863946999b54dc9a749558c7424f7c2b0a",
+      "bytes": 999
+    },
+    "scripts/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "scripts/generate_secrets.py": {
+      "sha256": "ccc09f22ac2972503e423c152cefca89452b92d4f2a7c1f1b1cd4897f8b04a5b",
+      "bytes": 724
+    },
+    "scripts/package_release.py": {
+      "sha256": "d9d3fa3104f64d7a287d98334d05cc9cdffd328c18a04471fe521bfc75a622be",
+      "bytes": 2725
+    },
+    "scripts/setup.ps1": {
+      "sha256": "e3fbe233b5dd9bd3a8a87b8d9b98c6c0ef7c4bccd778bd75ae9bede411d6c48c",
+      "bytes": 785
+    },
+    "scripts/setup.sh": {
+      "sha256": "425e7e852e25b55e8a64ab1a31a2652a023a26ce540941cd55877cd236760612",
+      "bytes": 339
+    },
+    "scripts/start-demo.ps1": {
+      "sha256": "cbcf6842d9c3594aebb9dcc184e9be9de94ee4d51eb93181803a914ee68edc0f",
+      "bytes": 207
+    },
+    "scripts/start-demo.sh": {
+      "sha256": "f4225ab9b6754d47d7b9d0842af6d65a4c150bd0ebda48627d0b46831e2b2ce9",
+      "bytes": 180
+    },
+    "scripts/train_reference.py": {
+      "sha256": "148da30868ff36e7f27ed30f57ad10529b1e56495b94dc4e3e2608f876724e95",
+      "bytes": 2626
+    },
+    "tests/conftest.py": {
+      "sha256": "46eb9bbb345bce968d754ea9f0d30e20fef8ac4062e192418de453d06668cf8d",
+      "bytes": 506
+    },
+    "tests/test_api.py": {
+      "sha256": "b31130e06e80262ef75dd6c33f2ff1ff352f301559fd180be9944fb87f7afc2b",
+      "bytes": 6060
+    },
+    "tests/test_integrations.py": {
+      "sha256": "e1b58aa6804a82ca188ffab9324307ae4f0abd2aedc661f7b171a2d13a7518e7",
+      "bytes": 2992
+    },
+    "tests/test_models_metrics.py": {
+      "sha256": "5a97a9f6e149ebeab7ee4bdd04b314747426a9e0d105c6e741eb69bf460f3cde",
+      "bytes": 5086
+    },
+    "tests/test_recovery.py": {
+      "sha256": "74f682575b88db723fcdfd5444e0626f0c35d5df6cc60e2bf9ba88daad46aa7b",
+      "bytes": 3549
+    },
+    "tests/test_reference.py": {
+      "sha256": "fcd6a423df62d6288759a3a4c309739c244c14a8ef0fffa330e905caf57564a0",
+      "bytes": 6603
+    },
+    "tests/test_runtime.py": {
+      "sha256": "83d9181c3ff0977c27132775b06b113def422ebf69eb0400ce4ac46977229709",
+      "bytes": 8684
+    },
+    "tests/test_security_tools.py": {
+      "sha256": "27e9fd2b73d5ff02b475494d6cfe04a0ed82ae3524e3efb6e641765766ad7b97",
+      "bytes": 9536
+    },
+    "tests/test_store.py": {
+      "sha256": "706c5f3f061b3b14bcbd8efd186ed065aada5fe1849aa5e4222d0d7ef6c860a0",
+      "bytes": 5566
+    },
+    "tests/test_worker_process.py": {
+      "sha256": "54d4b03007a9cd6ace504ae661ca76398cc28731e52cf6a7940f330076fb77a3",
+      "bytes": 2219
+    }
+  }
+}
