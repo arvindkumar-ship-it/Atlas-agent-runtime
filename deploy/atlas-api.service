@@ -1,0 +1,23 @@
+[Unit]
+Description=Atlas API and console
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=atlas
+Group=atlas
+WorkingDirectory=/opt/atlas
+EnvironmentFile=/etc/atlas/atlas.env
+Environment=ATLAS_EMBEDDED_WORKER=false
+ExecStart=/opt/atlas/.venv/bin/atlas serve --host 127.0.0.1 --port 8000
+Restart=on-failure
+RestartSec=5
+UMask=0002
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/opt/atlas/data /opt/atlas/repositories
+
+[Install]
+WantedBy=multi-user.target

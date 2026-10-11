@@ -1,0 +1,19 @@
+services:
+  model:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    command:
+      - -m
+      - /models/${ATLAS_GGUF_FILENAME:?Set ATLAS_GGUF_FILENAME to your GGUF file}
+      - --host
+      - 0.0.0.0
+      - --port
+      - '8080'
+      - --alias
+      - local-model
+      - -c
+      - '24576'
+    volumes:
+      - ../models:/models:ro
+    ports:
+      - '127.0.0.1:8080:8080'
+    restart: unless-stopped

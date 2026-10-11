@@ -1,0 +1,23 @@
+[Unit]
+Description=Atlas isolated repository worker
+After=network-online.target docker.service
+Wants=network-online.target
+Requires=docker.service
+
+[Service]
+Type=simple
+User=atlas-worker
+Group=atlas
+SupplementaryGroups=docker
+WorkingDirectory=/opt/atlas
+EnvironmentFile=/etc/atlas/atlas.env
+ExecStart=/opt/atlas/.venv/bin/atlas worker
+Restart=on-failure
+RestartSec=5
+UMask=0002
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/opt/atlas/data /opt/atlas/repositories
+
+[Install]
+WantedBy=multi-user.target

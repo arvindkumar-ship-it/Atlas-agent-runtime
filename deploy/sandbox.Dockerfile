@@ -1,0 +1,6 @@
+FROM python:3.12-slim
+RUN pip install --no-cache-dir pytest==9.1.1
+ENV PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+WORKDIR /workspace
+USER 65534:65534
+CMD ["python", "-m", "pytest", "-q"]
