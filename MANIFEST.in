@@ -1,0 +1,12 @@
+include README.md START_HERE.md SECURITY.md TEST_REPORT.md
+include requirements.lock requirements-dev.lock Dockerfile compose.yaml render.yaml Makefile
+include .env.example .gitignore .dockerignore
+recursive-include docs *.md *.png
+recursive-include deploy *.yaml *.Dockerfile Dockerfile Caddyfile *.service
+recursive-include scripts *.py *.ps1 *.sh
+recursive-include frontend *.json *.ts *.tsx *.css *.html *.js *.mjs
+recursive-exclude frontend/node_modules *
+recursive-exclude frontend/test-results *
+recursive-exclude frontend/playwright-report *
+recursive-include benchmarks/results *.json *.jsonl *.csv
+recursive-include .github *.yaml

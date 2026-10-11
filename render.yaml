@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: atlas-runtime
+    runtime: docker
+    plan: starter
+    healthCheckPath: /readyz
+    disk:
+      name: atlas-state
+      mountPath: /app/data
+      sizeGB: 2
+    envVars:
+      - key: PORT
+        value: '8000'
+      - key: ATLAS_ENVIRONMENT
+        value: production
+      - key: ATLAS_API_KEY
+        generateValue: true
+      - key: ATLAS_BACKEND
+        value: demo
+      - key: ATLAS_SANDBOX
+        value: local
+      - key: ATLAS_ALLOW_TRUSTED_LOCAL
+        value: "true"
+      - key: ATLAS_DATABASE_URL
+        value: sqlite:////app/data/atlas.db
+      - key: ATLAS_REPO_ROOT
+        value: /app/data/repositories

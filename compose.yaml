@@ -1,0 +1,45 @@
+services:
+  database:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: atlas
+      POSTGRES_USER: atlas
+      POSTGRES_PASSWORD: ${ATLAS_DB_PASSWORD:?Generate ATLAS_DB_PASSWORD in .env}
+    volumes:
+      - database:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U atlas -d atlas"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+  atlas:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      ATLAS_ENVIRONMENT: production
+      ATLAS_API_KEY: ${ATLAS_API_KEY:?Generate ATLAS_API_KEY in .env}
+      ATLAS_DATABASE_URL: postgresql+psycopg://atlas:${ATLAS_DB_PASSWORD}@database:5432/atlas
+      ATLAS_DATA_DIR: /app/data
+      ATLAS_REPO_ROOT: /app/repositories
+      ATLAS_BACKEND: demo
+      ATLAS_SANDBOX: local
+      ATLAS_ALLOW_TRUSTED_LOCAL: "true"
+      ATLAS_EMBEDDED_WORKER: "true"
+    volumes:
+      - data:/app/data
+      - repositories:/app/repositories
+    depends_on:
+      database:
+        condition: service_healthy
+    restart: unless-stopped
+    init: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+volumes:
+  database:
+  data:
+  repositories:
